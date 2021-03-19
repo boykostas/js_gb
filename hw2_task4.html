@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict';
+       
+        let num1 = +prompt('Введите первое число: ');
+        let num2 = +prompt('Введите второе число: ');
+
+        function sum() {
+            sum = num1 + num2;
+            return sum;
+        }
+
+        function subtr() {
+            subtr = num1 - num2;
+            return subtr;
+        }
+
+        function mult() {
+            mult = num1 * num2;
+            return mult;
+        }
+
+        function divis() {
+            divis = num1 / num2;
+            return divis;
+        }
+
+        sum();
+        subtr();
+        mult();
+        divis();
+
+        alert(sum);
+        alert(subtr);
+        alert(mult);
+        alert(divis);
+
+        // скорее всего можно каким-то образом сократить запись, но пока я не знаю как)
+    </script>
+</body>
+</html>
