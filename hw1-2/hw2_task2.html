@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = 2; 
+        let x = 1 + (a *= 2);
+        // сначала выполняется действие в скобках, 2 * 2 = 4, переменная а = 4, далее операция сложения 1 + 4 = 5. Итого: x = 5
+        alert(x); // ответ - 5
+        alert(a); // ответ - 4 , т.к. перменная 'a' умножилась на 2 в скобках
+
+    </script>
+</body>
+</html>

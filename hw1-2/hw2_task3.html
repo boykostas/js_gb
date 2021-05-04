@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = +prompt('Введите первое число: ');
+        let b = +prompt('Введите второе число: ');
+
+        if (a >= 0 && b >= 0) {
+            alert( a - b );
+        } else if (a < 0 && b < 0) {
+            alert( a * b )
+        } else if ((a < 0 && b >= 0) || (a >= 0 && b < 0)) {
+            alert( a + b )
+        } else {
+            alert('Введите числа!')
+        };
+        
+        // не понимаю как сделать проверку, если пользователь не вводит вообще никаких значений, почему выводится 0, а хочу сделать чтобы писалось, что введите данные например...
+        // else if ((a = null) || (b = null)) - не работает
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork4_task1</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        function getNumber(num) {
+            if (!Number.isInteger(num) || num < 0 || num > 999) {
+                console.log('Значение аргумента должно быть целым числом в диапазоне [0 .. 999].');
+                return {};
+            }
+
+            return {
+                units: num % 10,
+                hundereds: Math.floor(num / 100),
+                tens: Math.floor(num / 10) % 10,
+            };
+        }
+
+        console.log(getNumber(169));
+    </script>
+</body>
+
+</html>
